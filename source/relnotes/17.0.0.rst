@@ -1,6 +1,4 @@
-Title: Mesa 17.0.0 is released
-
-Mesa 17.0.0 is released
+17.0.0
 =======================
 
 Mesa 17.0.0 is a new development release. People who are concerned with

@@ -10,27 +10,20 @@ Here you can read various information about the project.
 
 .. toctree::
    :maxdepth: 1
-   :caption: Latest News
-
-   17.0.0
-
-.. toctree::
-   :maxdepth: 2
    :caption: Documentation
-   :hidden:
    
    intro
    developers
    systems
    license
    faq
+   relnotes
    thanks
    conformance
 
 .. toctree::
    :maxdepth: 1
    :caption: Download / Install
-   :hidden:
    
    download
    install
@@ -40,16 +33,30 @@ Here you can read various information about the project.
 .. toctree::
    :maxdepth: 1
    :caption: Resources
-   :hidden:
    
    lists
    bugs
    webmaster
+   useful-links
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Developer Topics
    
+   repository
+   sourcetree
+   utilities
+   helpwanted
+   devinfo
+   codingstyle
+   submittingpatches
+   releasing
+   sourcedocs
+   dispatch
+
 .. toctree::
    :maxdepth: 1
    :caption: User Topics
-   :hidden:
    
    shading
    egl
@@ -66,19 +73,8 @@ Here you can read various information about the project.
    application-issues
    viewperf
    
-.. toctree::
-   :maxdepth: 1
-   :caption: Developer Topics
-   :hidden:
+If you're searching for the Gallium Documentation you can find it `here <https://gallium.readthedocs.io/en/latest/>`__.
+
+NIR documentation can be found `here <https://people.freedesktop.org/~cwabbott0/nir-docs/>`__.
    
-   repository
-   sourcetree
-   utilities
-   helpwanted
-   devinfo
-   codingstyle
-   submittingpatches
-   releasing
-   sourcedocs
-   dispatch
-   
+This website is hosted by `FreeDesktop.org <https://freedesktop.org/>`__.

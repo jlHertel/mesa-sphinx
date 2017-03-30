@@ -1,0 +1,118 @@
+12.0.5
+======
+
+Oficial release date: **December 5, 2016**
+
+NOTE: It is anticipated that 12.0.5 will be the final release in the 12.0 series.
+Users of 12.0 are encouraged to migrate to the 13.0 series in order to
+obtain future fixes.
+
+Mesa 12.0.5 is a bug fix release which fixes bugs found since the 12.0.5
+release.
+
+Mesa 12.0.5 implements the OpenGL 4.3 API, but the version reported by
+glGetString(GL\_VERSION) or glGetIntegerv(GL\_MAJOR\_VERSION) /
+glGetIntegerv(GL\_MINOR\_VERSION) depends on the particular driver being
+used. Some drivers don't support all the features required in OpenGL
+4.3. OpenGL 4.3 is **only** available if requested at context creation
+because compatibility contexts are not supported.
+
+SHA256 checksums
+----------------
+
+.. code-block:: text
+
+    44d08a27d98bfeacd864381189e434d98afbf451689d01f80380dc1d66450e5b  mesa-12.0.5.tar.gz
+    2b0a972d8282860a11291c09c3ef01ac45171405951eb21a83c45ed2b4321924  mesa-12.0.5.tar.xz
+
+New features
+------------
+
+None
+
+Bug fixes
+---------
+
+This list is likely incomplete.
+
+-  `Bug 77662 <https://bugs.freedesktop.org/show_bug.cgi?id=77662>`__ -
+   Fail to render to different faces of depth-stencil cube map
+
+-  `Bug 97779 <https://bugs.freedesktop.org/show_bug.cgi?id=97779>`__ -
+   [regression, bisected][BDW, GPU hang] stuck on render ring, always
+   reproducible
+
+-  `Bug 98415 <https://bugs.freedesktop.org/show_bug.cgi?id=98415>`__ -
+   Vulkan Driver JSON file contains incorrect field
+
+Changes
+-------
+
+Adam Jackson (2):
+
+-  glx/glvnd: Don't modify the dummy slot in the dispatch table
+-  glx/glvnd: Fix dispatch function names and indices
+
+Anuj Phogat (1):
+
+-  i965: Fix GPU hang related to multiple render targets and alpha
+   testing
+
+Emil Velikov (4):
+
+-  docs: add release notes for 12.0.4
+-  docs: add sha256 checksums for 12.0.4
+-  cherry-ignore: add reverted LLVM\_LIBDIR patch
+-  Update version to 12.0.5
+
+Haixia Shi (1):
+
+-  mesa: change state query return value for RGB565
+
+Jason Ekstrand (3):
+
+-  i965/fs/generator: Don't use the address immediate for MOV\_INDIRECT
+-  anv/cmd\_buffer: Take a command buffer instead of a batch in two
+   helpers
+-  anv/cmd\_buffer: Enable a CS stall workaround for Sky Lake gt4
+
+Kenneth Graunke (1):
+
+-  intel: Fix pixel shader scratch space allocation on Gen9+ platforms.
+
+Marek Olšák (13):
+
+-  gallium/radeon: fix behavior of GLSL findLSB(0)
+-  gallium/radeon: make sure HTILE address is aligned properly
+-  radeonsi: fix an assertion failure in
+   si\_decompress\_sampler\_color\_textures
+-  gallium/radeon: unify viewport emission code
+-  gallium/radeon: set VPORT\_ZMIN/MAX registers correctly
+-  radeonsi: fix gl\_PatchVerticesIn for tessellation evaluation shader
+-  radeonsi: fix a crash in imageSize for cubemap arrays
+-  radeonsi: emit TA\_CS\_BC\_BASE\_ADDR on SI only if the kernel allows
+   it
+-  gallium/radeon: add support for sharing textures with DCC between
+   processes
+-  radeonsi: always set all blend registers
+-  radeonsi: set CB\_BLEND1\_CONTROL.ENABLE for dual source blending
+-  radeonsi: disable RB+ blend optimizations for dual source blending
+-  radeonsi: silence runtime warnings with LLVM 3.9
+
+Matt Turner (1):
+
+-  anv: Replace "abi\_versions" with correct "api\_version".
+
+Nanley Chery (1):
+
+-  mesa/fbobject: Update CubeMapFace when reusing textures
+
+Steinar H. Gunderson (1):
+
+-  Fix races during \_mesa\_HashWalk().
+
+Tim Rowley (3):
+
+-  swr: [rasterizer jitter] cleanup supporting different llvm versions
+-  swr: [rasterizer jitter] fix llvm-3.7 compile
+-  swr: [rasterizer] add support for llvm-3.9

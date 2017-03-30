@@ -6,8 +6,6 @@
 Welcome to The Mesa 3D Graphics Library's documentation!
 ========================================================
 
-Here you can read various information about the project.
-
 .. toctree::
    :maxdepth: 1
    :caption: Documentation

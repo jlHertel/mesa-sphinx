@@ -1,5 +1,7 @@
 17.0.0
-=======================
+======
+
+Oficial release date: **February 13, 2017**
 
 Mesa 17.0.0 is a new development release. People who are concerned with
 stability and reliability should stick with a previous release or wait
@@ -15,9 +17,8 @@ because compatibility contexts are not supported.
 SHA256 checksums
 ----------------
 
-::
+.. code-block:: text
 
-    :::text
     696578f0b83796470511a88a95fff15a2a25fa201a9e487716f2ca20c177c3ab  mesa-17.0.0.tar.gz
     39db3d59700159add7f977307d12a7dfe016363e760ad82280ac4168ea668481  mesa-17.0.0.tar.xz
 
